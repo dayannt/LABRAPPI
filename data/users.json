@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Juan Pérez",
+    "email": "juan@email.com",
+    "password": "123456",
+    "role": "consumer"
+  },
+  {
+    "id": 2,
+    "name": "María García",
+    "email": "maria@email.com",
+    "password": "123456",
+    "role": "consumer"
+  },
+  {
+    "id": 3,
+    "name": "Carlos López",
+    "email": "carlos@restaurant.com",
+    "password": "123456",
+    "role": "store"
+  },
+  {
+    "id": 4,
+    "name": "Ana Martínez",
+    "email": "ana@restaurant.com",
+    "password": "123456",
+    "role": "store"
+  },
+  {
+    "id": 5,
+    "name": "Pedro Rodríguez",
+    "email": "pedro@delivery.com",
+    "password": "123456",
+    "role": "delivery"
+  },
+  {
+    "id": 6,
+    "name": "Luis Hernández",
+    "email": "luis@delivery.com",
+    "password": "123456",
+    "role": "delivery"
+  }
+]

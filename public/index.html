@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappi - Selección de Rol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Rappi</h1>
+            <p>Selecciona tu rol para continuar</p>
+        </header>
+        
+        <main class="main">
+            <div class="role-cards">
+                <div class="role-card" onclick="selectRole('consumer')">
+                    <div class="role-icon"></div>
+                    <h2>Consumidor</h2>
+                    <p>Pide comida de tus restaurantes favoritos</p>
+                    <button class="role-btn">Entrar como Consumidor</button>
+                </div>
+                
+                <div class="role-card" onclick="selectRole('store')">
+                    <div class="role-icon"></div>
+                    <h2>Restaurante</h2>
+                    <p>Gestiona tu tienda y productos</p>
+                    <button class="role-btn">Entrar como Restaurante</button>
+                </div>
+                
+                <div class="role-card" onclick="selectRole('delivery')">
+                    <div class="role-icon"></div>
+                    <h2>Repartidor</h2>
+                    <p>Entrega pedidos a domicilio</p>
+                    <button class="role-btn">Entrar como Repartidor</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

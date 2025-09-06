@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Palace",
+    "description": "Las mejores pizzas de la ciudad",
+    "address": "Calle Principal 123",
+    "phone": "555-0101",
+    "isOpen": false,
+    "ownerId": 3
+  },
+  {
+    "id": 2,
+    "name": "Burger King",
+    "description": "Hamburguesas deliciosas",
+    "address": "Avenida Central 456",
+    "phone": "555-0202",
+    "isOpen": true,
+    "ownerId": 4
+  },
+  {
+    "id": 3,
+    "name": "Sushi Master",
+    "description": "Sushi fresco y auténtico",
+    "address": "Plaza Mayor 789",
+    "phone": "555-0303",
+    "isOpen": false,
+    "ownerId": 3
+  }
+]

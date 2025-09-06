@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test App Repartidor</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 8px; }
+        .test-btn { background: #ff6b35; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
+        .test-btn:hover { background: #e55a2b; }
+    </style>
+</head>
+<body>
+    <h1>Test de App de Repartidor</h1>
+    
+    <div class="test-section">
+        <h2>Estado del Servidor</h2>
+        <p>Servidor funcionando en: <a href="http://localhost:5050" target="_blank">http://localhost:5050</a></p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Apps Disponibles</h2>
+        <button class="test-btn" onclick="window.open('http://localhost:5050', '_blank')">Página Principal</button>
+        <button class="test-btn" onclick="window.open('http://localhost:5050/delivery-app/', '_blank')">App Repartidor</button>
+    </div>
+    
+    <div class="test-section">
+        <h2>Usuarios de Prueba</h2>
+        <p><strong>Repartidor 1:</strong> pedro@delivery.com / 123456</p>
+        <p><strong>Repartidor 2:</strong> luis@delivery.com / 123456</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Prueba del Botón Volver</h2>
+        <ol>
+            <li>Accede a la App de Repartidor</li>
+            <li>Inicia sesión con un repartidor</li>
+            <li>Ve a "Pedidos Disponibles"</li>
+            <li>Haz clic en "Ver Detalles" de cualquier pedido</li>
+            <li>Haz clic en el botón "← Volver"</li>
+            <li>Deberías regresar a la pantalla de pedidos disponibles</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>Endpoints de Prueba</h2>
+        <button class="test-btn" onclick="window.open('http://localhost:5050/orders/available', '_blank')">Pedidos Disponibles</button>
+        <button class="test-btn" onclick="window.open('http://localhost:5050/stores', '_blank')">Tiendas</button>
+    </div>
+</body>
+</html>

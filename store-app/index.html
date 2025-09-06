@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappi Clone - Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de Login -->
+        <div id="login-screen" class="screen active">
+            <div class="login-container">
+                <h1>Iniciar Sesión- Tienda</h1>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                </form>
+                <p class="error-message" id="login-error"></p>
+            </div>
+        </div>
+
+        <!-- Pantalla Principal -->
+        <div id="main-screen" class="screen">
+            <header class="header">
+                <h1>Panel de Tienda</h1>
+                <div class="user-info">
+                    <span id="user-name"></span>
+                    <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+                </div>
+            </header>
+
+            <nav class="nav">
+                <button class="nav-btn active" data-screen="dashboard">Dashboard</button>
+                <button class="nav-btn" data-screen="products">Productos</button>
+                <button class="nav-btn" data-screen="orders">Pedidos</button>
+            </nav>
+
+            <!-- Dashboard -->
+            <div id="dashboard-screen" class="content-screen active">
+                <h2>Información de la Tienda</h2>
+                <div id="store-info" class="store-info-card"></div>
+                
+                <div class="status-control">
+                    <h3>Estado de la Tienda</h3>
+                    <div class="status-toggle">
+                        <span id="current-status"></span>
+                        <button id="toggle-status" class="btn-primary">Cambiar Estado</button>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Productos</h3>
+                        <span id="products-count">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pedidos Pendientes</h3>
+                        <span id="pending-orders-count">0</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pedidos Hoy</h3>
+                        <span id="today-orders-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gestión de Productos -->
+            <div id="products-screen" class="content-screen">
+                <div class="products-header">
+                    <h2>Gestión de Productos</h2>
+                    <button id="add-product-btn" class="btn-primary">Agregar Producto</button>
+                </div>
+                
+                <div id="products-list" class="products-grid"></div>
+            </div>
+
+            <!-- Gestión de Pedidos -->
+            <div id="orders-screen" class="content-screen">
+                <h2>Pedidos de la Tienda</h2>
+                <div id="orders-list"></div>
+            </div>
+        </div>
+
+        <!-- Modal para Agregar/Editar Producto -->
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modal-title">Agregar Producto</h3>
+                    <button id="close-modal" class="close-btn">&times;</button>
+                </div>
+                <form id="product-form">
+                    <div class="form-group">
+                        <label for="product-name">Nombre del Producto:</label>
+                        <input type="text" id="product-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price">Precio:</label>
+                        <input type="number" id="product-price" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-image">URL de Imagen (opcional):</label>
+                        <input type="url" id="product-image">
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" id="cancel-product" class="btn-secondary">Cancelar</button>
+                        <button type="submit" class="btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
